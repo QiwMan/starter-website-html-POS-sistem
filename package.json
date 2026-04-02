@@ -1,0 +1,24 @@
+{
+  "name": "starter-website-html-POS-sistem",
+  "version": "1.0.0",
+  "description": "A simple Point of Sale (POS) system built with vanilla HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "pos",
+    "point-of-sale",
+    "html",
+    "css",
+    "javascript",
+    "vanilla-js"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
