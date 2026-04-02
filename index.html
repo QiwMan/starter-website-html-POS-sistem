@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛒 POS System</h1>
+            <div class="header-info">
+                <span id="datetime"></span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="products-section">
+                <div class="category-filter">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="food">Food</button>
+                    <button class="category-btn" data-category="beverage">Beverage</button>
+                    <button class="category-btn" data-category="dessert">Dessert</button>
+                </div>
+
+                <div class="products-grid" id="products-grid"></div>
+            </section>
+
+            <aside class="cart-section">
+                <h2>Cart</h2>
+                <div class="cart-items" id="cart-items"></div>
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (10%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Checkout</button>
+            </aside>
+        </main>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>Order Complete!</h2>
+            <p id="order-summary"></p>
+            <button class="close-btn" id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
